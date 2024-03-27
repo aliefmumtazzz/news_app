@@ -37,7 +37,7 @@ class TextComponent extends StatelessWidget {
         height: height ?? 1.5,
       ),
       maxLines: maxLines,
-      overflow: overflow ?? TextOverflow.ellipsis,
+      overflow: overflow ?? (maxLines != null ? TextOverflow.ellipsis : null),
     ).onTap(onTap);
   }
 }

@@ -24,6 +24,7 @@ class AuthorComponent extends StatelessWidget {
             text: author,
             fontSize: DisplaySize.smallText,
             color: ColorName.darkGrey,
+            maxLines: 1,
           ).paddingOnly(left: 4.w),
         ),
       ],

@@ -14,13 +14,13 @@ class TopHeadlinesCubit extends Cubit<TopHeadlinesState> {
       : super(const TopHeadlinesState.initial());
 
   void getTopHeadlines() async {
+    emit(const TopHeadlinesState.loading());
     final result = await _getTopHeadlines(
       const TopHeadLinesParams(
         category: 'general',
         pageSize: 10,
       ),
     );
-
     result.fold(
       (l) => emit(TopHeadlinesState.error(Exception(l))),
       (r) => emit(TopHeadlinesState.success(

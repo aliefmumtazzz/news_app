@@ -6,6 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../core/constant/display_size.dart';
 import '../../../../core/gen/colors.gen.dart';
 import '../../../../core/ui_component/author_component.dart';
+import '../../../../core/ui_component/loading_component.dart';
 import '../../../../core/ui_component/published_at_component.dart';
 import '../../../../core/ui_component/text_component.dart';
 import '../../../../core/util/build_context_util.dart';
@@ -42,9 +43,7 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SectionTitle('Top Headlines'),
               BreakingNewsSlider(),
-              SectionTitle('Sport'),
               SportList(),
             ],
           ),

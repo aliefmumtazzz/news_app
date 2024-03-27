@@ -8,30 +8,42 @@ class BreakingNewsSlider extends StatelessWidget {
     return BlocBuilder<TopHeadlinesCubit, TopHeadlinesState>(
       builder: (_, state) => state.maybeWhen(
         orElse: () => const SizedBox.shrink(),
-        success: (data) => SizedBox(
-          height: context.screenHeight * .3,
-          child: ListView.builder(
-            shrinkWrap: true,
-            itemCount: data.length,
-            scrollDirection: Axis.horizontal,
-            itemBuilder: (_, index) {
-              final item = data[index];
-              return TopHeadlinesCard(
-                index: index,
-                imgUrl: item.urlToImage,
-                title: item.title,
-                author: item.author,
-                publishedAt: item.publishedAt,
-              ).onTap(
-                () => context.goTo(DetailNewsPage(
-                  imgUrl: item.urlToImage ?? '',
-                  title: item.title,
-                  author: item.author,
-                  publishedAt: item.publishedAt,
-                )),
-              );
-            },
-          ),
+        loading: () => const LoadingComponent(
+          direction: LoadingDirection.horizontal,
+        ),
+        success: (data) => Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const SectionTitle('Top Headlines'),
+            SizedBox(
+              height: context.screenHeight * .3,
+              child: ListView.builder(
+                shrinkWrap: true,
+                itemCount: data.length,
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (_, index) {
+                  final item = data[index];
+                  return TopHeadlinesCard(
+                    index: index,
+                    imgUrl: item.urlToImage,
+                    title: item.title,
+                    author: item.author,
+                    publishedAt: item.publishedAt,
+                  ).onTap(
+                    () => context.goTo(DetailNewsPage(
+                      imgUrl: item.urlToImage ?? '',
+                      title: item.title,
+                      author: item.author,
+                      publishedAt: item.publishedAt,
+                      description: item.description,
+                      url: item.url,
+                      content: item.content,
+                    )),
+                  );
+                },
+              ),
+            ),
+          ],
         ),
       ),
     );
@@ -73,14 +85,11 @@ class TopHeadlinesCard extends StatelessWidget {
                 height: context.screenHeight * .15,
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(6.0),
-                  child: Hero(
-                    tag: imgUrl ?? '',
-                    child: CachedNetworkImage(
-                      imageUrl: imgUrl ?? '',
-                      height: context.screenHeight * .15,
-                      width: context.screenWidth * .6,
-                      fit: BoxFit.cover,
-                    ),
+                  child: CachedNetworkImage(
+                    imageUrl: imgUrl ?? '',
+                    height: context.screenHeight * .15,
+                    width: context.screenWidth * .6,
+                    fit: BoxFit.cover,
                   ),
                 ),
               ),
@@ -90,7 +99,7 @@ class TopHeadlinesCard extends StatelessWidget {
               height: 1.2,
               fontSize: DisplaySize.textH4,
             ).paddingOnly(top: 6.h),
-            if (author != '')
+            if (author != '' && author != null)
               AuthorComponent(author ?? '').paddingOnly(top: 6.h),
             PublishedAtComponent(publishedAt).paddingOnly(top: 6.h),
           ],

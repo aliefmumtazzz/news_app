@@ -13,13 +13,13 @@ class SportCubit extends Cubit<SportState> {
   SportCubit(this._getTopHeadlines) : super(const SportState.initial());
 
   void getSport() async {
+    emit(const SportState.loading());
     final result = await _getTopHeadlines(
       const TopHeadLinesParams(
         category: 'sport',
         pageSize: 6,
       ),
     );
-
     result.fold(
       (l) => emit(SportState.error(Exception(l))),
       (r) => emit(SportState.success(
