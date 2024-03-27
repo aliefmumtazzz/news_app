@@ -5,8 +5,10 @@ import '../../../../core/util/dio_service_util.dart';
 import '../model/top_headlines_model.dart';
 
 abstract interface class HomeRemoteDataSource {
-  Future<List<TopHeadlinesModel>> getTopHeadlines();
-  Future<List<TopHeadlinesModel>> getExplore();
+  Future<List<TopHeadlinesModel>> getTopHeadlines({
+    required String category,
+    required int pageSize,
+  });
 }
 
 class HomeRemoteDateSourceImpl implements HomeRemoteDataSource {
@@ -15,7 +17,10 @@ class HomeRemoteDateSourceImpl implements HomeRemoteDataSource {
   const HomeRemoteDateSourceImpl(this._baseService);
 
   @override
-  Future<List<TopHeadlinesModel>> getTopHeadlines() async {
+  Future<List<TopHeadlinesModel>> getTopHeadlines({
+    required String category,
+    required int pageSize,
+  }) async {
     try {
       const url = '/top-headlines';
 
@@ -23,30 +28,8 @@ class HomeRemoteDateSourceImpl implements HomeRemoteDataSource {
         url,
         queryParameters: {
           'country': 'us',
-          'pageSize': '10',
-        },
-      );
-
-      final data = jsonDecode(result.data);
-
-      return List<TopHeadlinesModel>.from(
-        data['articles'].map((x) => TopHeadlinesModel.fromJson(x)),
-      );
-    } catch (e) {
-      throw ServerException(e.toString());
-    }
-  }
-
-  @override
-  Future<List<TopHeadlinesModel>> getExplore() async {
-    try {
-      const url = '/everything';
-
-      final result = await _baseService.dio.get(
-        url,
-        queryParameters: {
-          'country': 'us',
-          'pageSize': '10',
+          'pageSize': pageSize,
+          'category': category,
         },
       );
 

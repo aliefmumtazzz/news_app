@@ -16,28 +16,19 @@ class HomeRepositoryImpl implements HomeRepository {
   const HomeRepositoryImpl(this._connectionChecker, this._homeRemoteDataSource);
 
   @override
-  Future<Either<Failure, List<TopHeadlines>>> getTopHeadlines() async {
+  Future<Either<Failure, List<TopHeadlines>>> getTopHeadlines({
+    required String category,
+    required int pageSize,
+  }) async {
     try {
       if (!await _connectionChecker.isConnected) {
         return left(Failure(MessageConstant.noInternetConnection));
       }
 
-      final result = await _homeRemoteDataSource.getTopHeadlines();
-
-      return right(result);
-    } on ServerException catch (e) {
-      throw left(Failure(e.message));
-    }
-  }
-
-  @override
-  Future<Either<Failure, List<TopHeadlines>>> getExplore() async {
-    try {
-      if (!await _connectionChecker.isConnected) {
-        return left(Failure(MessageConstant.noInternetConnection));
-      }
-
-      final result = await _homeRemoteDataSource.getExplore();
+      final result = await _homeRemoteDataSource.getTopHeadlines(
+        category: category,
+        pageSize: pageSize,
+      );
 
       return right(result);
     } on ServerException catch (e) {

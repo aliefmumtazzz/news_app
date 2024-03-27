@@ -6,7 +6,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'feature/home/presentation/controller/explore_cubit.dart';
+import 'feature/home/presentation/controller/sport_cubit.dart';
 import 'feature/home/presentation/controller/top_headlines_cubit.dart';
 import 'feature/home/presentation/page/home_page.dart';
 import 'injector.dart';
@@ -42,7 +42,7 @@ class NewsApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (_) => injector.get<TopHeadlinesCubit>()),
-        BlocProvider(create: (_) => injector.get<ExploreCubit>())
+        BlocProvider(create: (_) => injector.get<SportCubit>()),
       ],
       child: ScreenUtilInit(
         designSize: const Size(320, 568),

@@ -39,15 +39,12 @@ class Injector {
       ..registerFactory<GetTopHeadlines>(
         () => GetTopHeadlines(injector()),
       )
-      ..registerFactory<GetExplore>(
-        () => GetExplore(injector()),
-      )
       // cubit
       ..registerLazySingleton<TopHeadlinesCubit>(
         () => TopHeadlinesCubit(injector()),
       )
-      ..registerLazySingleton<ExploreCubit>(
-        () => ExploreCubit(injector()),
+      ..registerLazySingleton<SportCubit>(
+        () => SportCubit(injector()),
       );
   }
 }

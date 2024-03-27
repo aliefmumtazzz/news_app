@@ -5,6 +5,7 @@ class TopHeadlines {
   final String? url;
   final String? urlToImage;
   final String? content;
+  final DateTime? publishedAt;
 
   const TopHeadlines(
     this.author,
@@ -13,6 +14,7 @@ class TopHeadlines {
     this.url,
     this.urlToImage,
     this.content,
+    this.publishedAt,
   );
 }
 

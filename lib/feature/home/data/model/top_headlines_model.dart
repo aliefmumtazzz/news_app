@@ -15,6 +15,7 @@ class TopHeadlinesModel extends TopHeadlines {
     super.url,
     super.urlToImage,
     super.content,
+    super.publishedAt,
     this.source,
   );
 

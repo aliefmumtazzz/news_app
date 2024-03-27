@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'explore_cubit.dart';
+part of 'sport_cubit.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,7 +15,7 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
-mixin _$ExploreState {
+mixin _$SportState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
@@ -43,42 +43,42 @@ mixin _$ExploreState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(ExploreInitialState value) initial,
-    required TResult Function(ExploreLoadingState value) loading,
-    required TResult Function(ExploreSuccessState value) success,
-    required TResult Function(ExploreErrorState value) error,
+    required TResult Function(SportInitialState value) initial,
+    required TResult Function(SportLoadingState value) loading,
+    required TResult Function(SportSuccessState value) success,
+    required TResult Function(SportErrorState value) error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(ExploreInitialState value)? initial,
-    TResult? Function(ExploreLoadingState value)? loading,
-    TResult? Function(ExploreSuccessState value)? success,
-    TResult? Function(ExploreErrorState value)? error,
+    TResult? Function(SportInitialState value)? initial,
+    TResult? Function(SportLoadingState value)? loading,
+    TResult? Function(SportSuccessState value)? success,
+    TResult? Function(SportErrorState value)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(ExploreInitialState value)? initial,
-    TResult Function(ExploreLoadingState value)? loading,
-    TResult Function(ExploreSuccessState value)? success,
-    TResult Function(ExploreErrorState value)? error,
+    TResult Function(SportInitialState value)? initial,
+    TResult Function(SportLoadingState value)? loading,
+    TResult Function(SportSuccessState value)? success,
+    TResult Function(SportErrorState value)? error,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ExploreStateCopyWith<$Res> {
-  factory $ExploreStateCopyWith(
-          ExploreState value, $Res Function(ExploreState) then) =
-      _$ExploreStateCopyWithImpl<$Res, ExploreState>;
+abstract class $SportStateCopyWith<$Res> {
+  factory $SportStateCopyWith(
+          SportState value, $Res Function(SportState) then) =
+      _$SportStateCopyWithImpl<$Res, SportState>;
 }
 
 /// @nodoc
-class _$ExploreStateCopyWithImpl<$Res, $Val extends ExploreState>
-    implements $ExploreStateCopyWith<$Res> {
-  _$ExploreStateCopyWithImpl(this._value, this._then);
+class _$SportStateCopyWithImpl<$Res, $Val extends SportState>
+    implements $SportStateCopyWith<$Res> {
+  _$SportStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -87,36 +87,35 @@ class _$ExploreStateCopyWithImpl<$Res, $Val extends ExploreState>
 }
 
 /// @nodoc
-abstract class _$$ExploreInitialStateImplCopyWith<$Res> {
-  factory _$$ExploreInitialStateImplCopyWith(_$ExploreInitialStateImpl value,
-          $Res Function(_$ExploreInitialStateImpl) then) =
-      __$$ExploreInitialStateImplCopyWithImpl<$Res>;
+abstract class _$$SportInitialStateImplCopyWith<$Res> {
+  factory _$$SportInitialStateImplCopyWith(_$SportInitialStateImpl value,
+          $Res Function(_$SportInitialStateImpl) then) =
+      __$$SportInitialStateImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$ExploreInitialStateImplCopyWithImpl<$Res>
-    extends _$ExploreStateCopyWithImpl<$Res, _$ExploreInitialStateImpl>
-    implements _$$ExploreInitialStateImplCopyWith<$Res> {
-  __$$ExploreInitialStateImplCopyWithImpl(_$ExploreInitialStateImpl _value,
-      $Res Function(_$ExploreInitialStateImpl) _then)
+class __$$SportInitialStateImplCopyWithImpl<$Res>
+    extends _$SportStateCopyWithImpl<$Res, _$SportInitialStateImpl>
+    implements _$$SportInitialStateImplCopyWith<$Res> {
+  __$$SportInitialStateImplCopyWithImpl(_$SportInitialStateImpl _value,
+      $Res Function(_$SportInitialStateImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$ExploreInitialStateImpl implements ExploreInitialState {
-  const _$ExploreInitialStateImpl();
+class _$SportInitialStateImpl implements SportInitialState {
+  const _$SportInitialStateImpl();
 
   @override
   String toString() {
-    return 'ExploreState.initial()';
+    return 'SportState.initial()';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ExploreInitialStateImpl);
+        (other.runtimeType == runtimeType && other is _$SportInitialStateImpl);
   }
 
   @override
@@ -162,10 +161,10 @@ class _$ExploreInitialStateImpl implements ExploreInitialState {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(ExploreInitialState value) initial,
-    required TResult Function(ExploreLoadingState value) loading,
-    required TResult Function(ExploreSuccessState value) success,
-    required TResult Function(ExploreErrorState value) error,
+    required TResult Function(SportInitialState value) initial,
+    required TResult Function(SportLoadingState value) loading,
+    required TResult Function(SportSuccessState value) success,
+    required TResult Function(SportErrorState value) error,
   }) {
     return initial(this);
   }
@@ -173,10 +172,10 @@ class _$ExploreInitialStateImpl implements ExploreInitialState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(ExploreInitialState value)? initial,
-    TResult? Function(ExploreLoadingState value)? loading,
-    TResult? Function(ExploreSuccessState value)? success,
-    TResult? Function(ExploreErrorState value)? error,
+    TResult? Function(SportInitialState value)? initial,
+    TResult? Function(SportLoadingState value)? loading,
+    TResult? Function(SportSuccessState value)? success,
+    TResult? Function(SportErrorState value)? error,
   }) {
     return initial?.call(this);
   }
@@ -184,10 +183,10 @@ class _$ExploreInitialStateImpl implements ExploreInitialState {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(ExploreInitialState value)? initial,
-    TResult Function(ExploreLoadingState value)? loading,
-    TResult Function(ExploreSuccessState value)? success,
-    TResult Function(ExploreErrorState value)? error,
+    TResult Function(SportInitialState value)? initial,
+    TResult Function(SportLoadingState value)? loading,
+    TResult Function(SportSuccessState value)? success,
+    TResult Function(SportErrorState value)? error,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -197,41 +196,40 @@ class _$ExploreInitialStateImpl implements ExploreInitialState {
   }
 }
 
-abstract class ExploreInitialState implements ExploreState {
-  const factory ExploreInitialState() = _$ExploreInitialStateImpl;
+abstract class SportInitialState implements SportState {
+  const factory SportInitialState() = _$SportInitialStateImpl;
 }
 
 /// @nodoc
-abstract class _$$ExploreLoadingStateImplCopyWith<$Res> {
-  factory _$$ExploreLoadingStateImplCopyWith(_$ExploreLoadingStateImpl value,
-          $Res Function(_$ExploreLoadingStateImpl) then) =
-      __$$ExploreLoadingStateImplCopyWithImpl<$Res>;
+abstract class _$$SportLoadingStateImplCopyWith<$Res> {
+  factory _$$SportLoadingStateImplCopyWith(_$SportLoadingStateImpl value,
+          $Res Function(_$SportLoadingStateImpl) then) =
+      __$$SportLoadingStateImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$ExploreLoadingStateImplCopyWithImpl<$Res>
-    extends _$ExploreStateCopyWithImpl<$Res, _$ExploreLoadingStateImpl>
-    implements _$$ExploreLoadingStateImplCopyWith<$Res> {
-  __$$ExploreLoadingStateImplCopyWithImpl(_$ExploreLoadingStateImpl _value,
-      $Res Function(_$ExploreLoadingStateImpl) _then)
+class __$$SportLoadingStateImplCopyWithImpl<$Res>
+    extends _$SportStateCopyWithImpl<$Res, _$SportLoadingStateImpl>
+    implements _$$SportLoadingStateImplCopyWith<$Res> {
+  __$$SportLoadingStateImplCopyWithImpl(_$SportLoadingStateImpl _value,
+      $Res Function(_$SportLoadingStateImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$ExploreLoadingStateImpl implements ExploreLoadingState {
-  const _$ExploreLoadingStateImpl();
+class _$SportLoadingStateImpl implements SportLoadingState {
+  const _$SportLoadingStateImpl();
 
   @override
   String toString() {
-    return 'ExploreState.loading()';
+    return 'SportState.loading()';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ExploreLoadingStateImpl);
+        (other.runtimeType == runtimeType && other is _$SportLoadingStateImpl);
   }
 
   @override
@@ -277,10 +275,10 @@ class _$ExploreLoadingStateImpl implements ExploreLoadingState {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(ExploreInitialState value) initial,
-    required TResult Function(ExploreLoadingState value) loading,
-    required TResult Function(ExploreSuccessState value) success,
-    required TResult Function(ExploreErrorState value) error,
+    required TResult Function(SportInitialState value) initial,
+    required TResult Function(SportLoadingState value) loading,
+    required TResult Function(SportSuccessState value) success,
+    required TResult Function(SportErrorState value) error,
   }) {
     return loading(this);
   }
@@ -288,10 +286,10 @@ class _$ExploreLoadingStateImpl implements ExploreLoadingState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(ExploreInitialState value)? initial,
-    TResult? Function(ExploreLoadingState value)? loading,
-    TResult? Function(ExploreSuccessState value)? success,
-    TResult? Function(ExploreErrorState value)? error,
+    TResult? Function(SportInitialState value)? initial,
+    TResult? Function(SportLoadingState value)? loading,
+    TResult? Function(SportSuccessState value)? success,
+    TResult? Function(SportErrorState value)? error,
   }) {
     return loading?.call(this);
   }
@@ -299,10 +297,10 @@ class _$ExploreLoadingStateImpl implements ExploreLoadingState {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(ExploreInitialState value)? initial,
-    TResult Function(ExploreLoadingState value)? loading,
-    TResult Function(ExploreSuccessState value)? success,
-    TResult Function(ExploreErrorState value)? error,
+    TResult Function(SportInitialState value)? initial,
+    TResult Function(SportLoadingState value)? loading,
+    TResult Function(SportSuccessState value)? success,
+    TResult Function(SportErrorState value)? error,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -312,25 +310,25 @@ class _$ExploreLoadingStateImpl implements ExploreLoadingState {
   }
 }
 
-abstract class ExploreLoadingState implements ExploreState {
-  const factory ExploreLoadingState() = _$ExploreLoadingStateImpl;
+abstract class SportLoadingState implements SportState {
+  const factory SportLoadingState() = _$SportLoadingStateImpl;
 }
 
 /// @nodoc
-abstract class _$$ExploreSuccessStateImplCopyWith<$Res> {
-  factory _$$ExploreSuccessStateImplCopyWith(_$ExploreSuccessStateImpl value,
-          $Res Function(_$ExploreSuccessStateImpl) then) =
-      __$$ExploreSuccessStateImplCopyWithImpl<$Res>;
+abstract class _$$SportSuccessStateImplCopyWith<$Res> {
+  factory _$$SportSuccessStateImplCopyWith(_$SportSuccessStateImpl value,
+          $Res Function(_$SportSuccessStateImpl) then) =
+      __$$SportSuccessStateImplCopyWithImpl<$Res>;
   @useResult
   $Res call({List<TopHeadlines> data});
 }
 
 /// @nodoc
-class __$$ExploreSuccessStateImplCopyWithImpl<$Res>
-    extends _$ExploreStateCopyWithImpl<$Res, _$ExploreSuccessStateImpl>
-    implements _$$ExploreSuccessStateImplCopyWith<$Res> {
-  __$$ExploreSuccessStateImplCopyWithImpl(_$ExploreSuccessStateImpl _value,
-      $Res Function(_$ExploreSuccessStateImpl) _then)
+class __$$SportSuccessStateImplCopyWithImpl<$Res>
+    extends _$SportStateCopyWithImpl<$Res, _$SportSuccessStateImpl>
+    implements _$$SportSuccessStateImplCopyWith<$Res> {
+  __$$SportSuccessStateImplCopyWithImpl(_$SportSuccessStateImpl _value,
+      $Res Function(_$SportSuccessStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -338,7 +336,7 @@ class __$$ExploreSuccessStateImplCopyWithImpl<$Res>
   $Res call({
     Object? data = null,
   }) {
-    return _then(_$ExploreSuccessStateImpl(
+    return _then(_$SportSuccessStateImpl(
       null == data
           ? _value._data
           : data // ignore: cast_nullable_to_non_nullable
@@ -349,8 +347,8 @@ class __$$ExploreSuccessStateImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ExploreSuccessStateImpl implements ExploreSuccessState {
-  const _$ExploreSuccessStateImpl(final List<TopHeadlines> data) : _data = data;
+class _$SportSuccessStateImpl implements SportSuccessState {
+  const _$SportSuccessStateImpl(final List<TopHeadlines> data) : _data = data;
 
   final List<TopHeadlines> _data;
   @override
@@ -362,14 +360,14 @@ class _$ExploreSuccessStateImpl implements ExploreSuccessState {
 
   @override
   String toString() {
-    return 'ExploreState.success(data: $data)';
+    return 'SportState.success(data: $data)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ExploreSuccessStateImpl &&
+            other is _$SportSuccessStateImpl &&
             const DeepCollectionEquality().equals(other._data, _data));
   }
 
@@ -380,8 +378,8 @@ class _$ExploreSuccessStateImpl implements ExploreSuccessState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ExploreSuccessStateImplCopyWith<_$ExploreSuccessStateImpl> get copyWith =>
-      __$$ExploreSuccessStateImplCopyWithImpl<_$ExploreSuccessStateImpl>(
+  _$$SportSuccessStateImplCopyWith<_$SportSuccessStateImpl> get copyWith =>
+      __$$SportSuccessStateImplCopyWithImpl<_$SportSuccessStateImpl>(
           this, _$identity);
 
   @override
@@ -424,10 +422,10 @@ class _$ExploreSuccessStateImpl implements ExploreSuccessState {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(ExploreInitialState value) initial,
-    required TResult Function(ExploreLoadingState value) loading,
-    required TResult Function(ExploreSuccessState value) success,
-    required TResult Function(ExploreErrorState value) error,
+    required TResult Function(SportInitialState value) initial,
+    required TResult Function(SportLoadingState value) loading,
+    required TResult Function(SportSuccessState value) success,
+    required TResult Function(SportErrorState value) error,
   }) {
     return success(this);
   }
@@ -435,10 +433,10 @@ class _$ExploreSuccessStateImpl implements ExploreSuccessState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(ExploreInitialState value)? initial,
-    TResult? Function(ExploreLoadingState value)? loading,
-    TResult? Function(ExploreSuccessState value)? success,
-    TResult? Function(ExploreErrorState value)? error,
+    TResult? Function(SportInitialState value)? initial,
+    TResult? Function(SportLoadingState value)? loading,
+    TResult? Function(SportSuccessState value)? success,
+    TResult? Function(SportErrorState value)? error,
   }) {
     return success?.call(this);
   }
@@ -446,10 +444,10 @@ class _$ExploreSuccessStateImpl implements ExploreSuccessState {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(ExploreInitialState value)? initial,
-    TResult Function(ExploreLoadingState value)? loading,
-    TResult Function(ExploreSuccessState value)? success,
-    TResult Function(ExploreErrorState value)? error,
+    TResult Function(SportInitialState value)? initial,
+    TResult Function(SportLoadingState value)? loading,
+    TResult Function(SportSuccessState value)? success,
+    TResult Function(SportErrorState value)? error,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -459,31 +457,31 @@ class _$ExploreSuccessStateImpl implements ExploreSuccessState {
   }
 }
 
-abstract class ExploreSuccessState implements ExploreState {
-  const factory ExploreSuccessState(final List<TopHeadlines> data) =
-      _$ExploreSuccessStateImpl;
+abstract class SportSuccessState implements SportState {
+  const factory SportSuccessState(final List<TopHeadlines> data) =
+      _$SportSuccessStateImpl;
 
   List<TopHeadlines> get data;
   @JsonKey(ignore: true)
-  _$$ExploreSuccessStateImplCopyWith<_$ExploreSuccessStateImpl> get copyWith =>
+  _$$SportSuccessStateImplCopyWith<_$SportSuccessStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$ExploreErrorStateImplCopyWith<$Res> {
-  factory _$$ExploreErrorStateImplCopyWith(_$ExploreErrorStateImpl value,
-          $Res Function(_$ExploreErrorStateImpl) then) =
-      __$$ExploreErrorStateImplCopyWithImpl<$Res>;
+abstract class _$$SportErrorStateImplCopyWith<$Res> {
+  factory _$$SportErrorStateImplCopyWith(_$SportErrorStateImpl value,
+          $Res Function(_$SportErrorStateImpl) then) =
+      __$$SportErrorStateImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Exception error});
 }
 
 /// @nodoc
-class __$$ExploreErrorStateImplCopyWithImpl<$Res>
-    extends _$ExploreStateCopyWithImpl<$Res, _$ExploreErrorStateImpl>
-    implements _$$ExploreErrorStateImplCopyWith<$Res> {
-  __$$ExploreErrorStateImplCopyWithImpl(_$ExploreErrorStateImpl _value,
-      $Res Function(_$ExploreErrorStateImpl) _then)
+class __$$SportErrorStateImplCopyWithImpl<$Res>
+    extends _$SportStateCopyWithImpl<$Res, _$SportErrorStateImpl>
+    implements _$$SportErrorStateImplCopyWith<$Res> {
+  __$$SportErrorStateImplCopyWithImpl(
+      _$SportErrorStateImpl _value, $Res Function(_$SportErrorStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -491,7 +489,7 @@ class __$$ExploreErrorStateImplCopyWithImpl<$Res>
   $Res call({
     Object? error = null,
   }) {
-    return _then(_$ExploreErrorStateImpl(
+    return _then(_$SportErrorStateImpl(
       null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
@@ -502,22 +500,22 @@ class __$$ExploreErrorStateImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ExploreErrorStateImpl implements ExploreErrorState {
-  const _$ExploreErrorStateImpl(this.error);
+class _$SportErrorStateImpl implements SportErrorState {
+  const _$SportErrorStateImpl(this.error);
 
   @override
   final Exception error;
 
   @override
   String toString() {
-    return 'ExploreState.error(error: $error)';
+    return 'SportState.error(error: $error)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ExploreErrorStateImpl &&
+            other is _$SportErrorStateImpl &&
             (identical(other.error, error) || other.error == error));
   }
 
@@ -527,8 +525,8 @@ class _$ExploreErrorStateImpl implements ExploreErrorState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ExploreErrorStateImplCopyWith<_$ExploreErrorStateImpl> get copyWith =>
-      __$$ExploreErrorStateImplCopyWithImpl<_$ExploreErrorStateImpl>(
+  _$$SportErrorStateImplCopyWith<_$SportErrorStateImpl> get copyWith =>
+      __$$SportErrorStateImplCopyWithImpl<_$SportErrorStateImpl>(
           this, _$identity);
 
   @override
@@ -571,10 +569,10 @@ class _$ExploreErrorStateImpl implements ExploreErrorState {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(ExploreInitialState value) initial,
-    required TResult Function(ExploreLoadingState value) loading,
-    required TResult Function(ExploreSuccessState value) success,
-    required TResult Function(ExploreErrorState value) error,
+    required TResult Function(SportInitialState value) initial,
+    required TResult Function(SportLoadingState value) loading,
+    required TResult Function(SportSuccessState value) success,
+    required TResult Function(SportErrorState value) error,
   }) {
     return error(this);
   }
@@ -582,10 +580,10 @@ class _$ExploreErrorStateImpl implements ExploreErrorState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(ExploreInitialState value)? initial,
-    TResult? Function(ExploreLoadingState value)? loading,
-    TResult? Function(ExploreSuccessState value)? success,
-    TResult? Function(ExploreErrorState value)? error,
+    TResult? Function(SportInitialState value)? initial,
+    TResult? Function(SportLoadingState value)? loading,
+    TResult? Function(SportSuccessState value)? success,
+    TResult? Function(SportErrorState value)? error,
   }) {
     return error?.call(this);
   }
@@ -593,10 +591,10 @@ class _$ExploreErrorStateImpl implements ExploreErrorState {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(ExploreInitialState value)? initial,
-    TResult Function(ExploreLoadingState value)? loading,
-    TResult Function(ExploreSuccessState value)? success,
-    TResult Function(ExploreErrorState value)? error,
+    TResult Function(SportInitialState value)? initial,
+    TResult Function(SportLoadingState value)? loading,
+    TResult Function(SportSuccessState value)? success,
+    TResult Function(SportErrorState value)? error,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -606,12 +604,11 @@ class _$ExploreErrorStateImpl implements ExploreErrorState {
   }
 }
 
-abstract class ExploreErrorState implements ExploreState {
-  const factory ExploreErrorState(final Exception error) =
-      _$ExploreErrorStateImpl;
+abstract class SportErrorState implements SportState {
+  const factory SportErrorState(final Exception error) = _$SportErrorStateImpl;
 
   Exception get error;
   @JsonKey(ignore: true)
-  _$$ExploreErrorStateImplCopyWith<_$ExploreErrorStateImpl> get copyWith =>
+  _$$SportErrorStateImplCopyWith<_$SportErrorStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

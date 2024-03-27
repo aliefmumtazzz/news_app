@@ -7,9 +7,8 @@ import 'core/util/internet_connection_checker_util.dart';
 import 'feature/home/data/datasource/home_remote_datasource.dart';
 import 'feature/home/data/repository/home_repository_impl.dart';
 import 'feature/home/domain/repository/home_repository.dart';
-import 'feature/home/domain/usecase/get_explore.dart';
 import 'feature/home/domain/usecase/get_top_headlines.dart';
-import 'feature/home/presentation/controller/explore_cubit.dart';
+import 'feature/home/presentation/controller/sport_cubit.dart';
 import 'feature/home/presentation/controller/top_headlines_cubit.dart';
 
 part 'injector.main.dart';

@@ -16,11 +16,17 @@ class ColorName {
   /// Color: #22213D
   static const Color black = Color(0xFF22213D);
 
+  /// Color: #53b9d4
+  static const Color blue = Color(0xFF53B9D4);
+
   /// Color: #919191
   static const Color darkGrey = Color(0xFF919191);
 
   /// Color: #D2D2D2
   static const Color grey = Color(0xFFD2D2D2);
+
+  /// Color: #ff9c10
+  static const Color orange = Color(0xFFFF9C10);
 
   /// Color: #FFFFFF
   static const Color pureWhite = Color(0xFFFFFFFF);

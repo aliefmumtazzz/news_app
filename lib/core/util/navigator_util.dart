@@ -8,9 +8,5 @@ extension NavigatorUtil on BuildContext {
     );
   }
 
-  void popUntilHome() {
-    Navigator.popUntil(this, (route) => route.isFirst);
-  }
-
   void pop() => Navigator.pop(this);
 }

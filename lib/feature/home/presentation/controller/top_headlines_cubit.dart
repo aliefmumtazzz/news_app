@@ -1,7 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../../../core/usecase/usecase.dart';
 import '../../domain/entity/top_headlines.dart';
 import '../../domain/usecase/get_top_headlines.dart';
 
@@ -15,7 +14,12 @@ class TopHeadlinesCubit extends Cubit<TopHeadlinesState> {
       : super(const TopHeadlinesState.initial());
 
   void getTopHeadlines() async {
-    final result = await _getTopHeadlines(NoParams());
+    final result = await _getTopHeadlines(
+      const TopHeadLinesParams(
+        category: 'general',
+        pageSize: 10,
+      ),
+    );
 
     result.fold(
       (l) => emit(TopHeadlinesState.error(Exception(l))),
