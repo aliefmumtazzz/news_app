@@ -23,6 +23,7 @@ class Injector {
     );
 
     _initHome();
+    _initSport();
   }
 
   static void _initHome() {
@@ -45,6 +46,26 @@ class Injector {
       )
       ..registerLazySingleton<SportCubit>(
         () => SportCubit(injector()),
+      );
+  }
+
+  static void _initSport() {
+    injector
+      // datasource
+      ..registerFactory<SportRemoteDatasource>(
+        () => SportRemoteDatasourceImpl(injector()),
+      )
+      // repository
+      ..registerFactory<SportRepository>(
+        () => SportRepositoryImpl(injector(), injector()),
+      )
+      // usecase
+      ..registerFactory<GetSport>(
+        () => GetSport(injector()),
+      )
+      // cubit
+      ..registerLazySingleton<SportListCubit>(
+        () => SportListCubit(injector()),
       );
   }
 }

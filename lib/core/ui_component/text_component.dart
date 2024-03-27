@@ -13,6 +13,7 @@ class TextComponent extends StatelessWidget {
   final int? maxLines;
   final TextOverflow? overflow;
   final Function()? onTap;
+  final TextAlign? textAlign;
 
   const TextComponent({
     super.key,
@@ -24,6 +25,7 @@ class TextComponent extends StatelessWidget {
     this.fontSize,
     this.height,
     this.onTap,
+    this.textAlign,
   });
 
   @override
@@ -38,6 +40,7 @@ class TextComponent extends StatelessWidget {
       ),
       maxLines: maxLines,
       overflow: overflow ?? (maxLines != null ? TextOverflow.ellipsis : null),
+      textAlign: textAlign,
     ).onTap(onTap);
   }
 }

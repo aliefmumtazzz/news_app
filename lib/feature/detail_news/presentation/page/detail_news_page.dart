@@ -99,28 +99,31 @@ class SectionBox extends StatelessWidget {
   });
   @override
   Widget build(BuildContext context) {
-    return DecoratedBox(
-      decoration: BoxDecoration(
-        color: ColorName.pureWhite,
-        borderRadius: BorderRadius.circular(12.sp),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          title != null
-              ? TextComponent(
-                  text: title ?? '',
-                  color: ColorName.grey,
-                  fontSize: DisplaySize.textH4,
-                )
-              : const SizedBox.shrink(),
-          valueWidget ??
-              TextComponent(
-                text: value ?? '',
-                fontSize: DisplaySize.textH3,
-              ),
-        ],
-      ).paddingSymmetric(horizontal: 12.sp, vertical: 8.sp),
-    ).paddingOnly(top: 12.h);
+    return SizedBox(
+      width: context.screenWidth,
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          color: ColorName.pureWhite,
+          borderRadius: BorderRadius.circular(12.sp),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            title != null
+                ? TextComponent(
+                    text: title ?? '',
+                    color: ColorName.grey,
+                    fontSize: DisplaySize.textH4,
+                  )
+                : const SizedBox.shrink(),
+            valueWidget ??
+                TextComponent(
+                  text: value ?? '',
+                  fontSize: DisplaySize.textH3,
+                ),
+          ],
+        ).paddingSymmetric(horizontal: 12.sp, vertical: 8.sp),
+      ).paddingOnly(top: 12.h),
+    );
   }
 }

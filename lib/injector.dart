@@ -10,5 +10,10 @@ import 'feature/home/domain/repository/home_repository.dart';
 import 'feature/home/domain/usecase/get_top_headlines.dart';
 import 'feature/home/presentation/controller/sport_cubit.dart';
 import 'feature/home/presentation/controller/top_headlines_cubit.dart';
+import 'feature/sport_list/data/datasource/sport_remote_datasource.dart';
+import 'feature/sport_list/data/repository/sport_repository_impl.dart';
+import 'feature/sport_list/domain/repository/sport_repository.dart';
+import 'feature/sport_list/domain/usecase/get_sport.dart';
+import 'feature/sport_list/presentation/controller/sport_list_cubit.dart';
 
 part 'injector.main.dart';

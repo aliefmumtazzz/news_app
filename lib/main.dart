@@ -9,6 +9,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'feature/home/presentation/controller/sport_cubit.dart';
 import 'feature/home/presentation/controller/top_headlines_cubit.dart';
 import 'feature/home/presentation/page/home_page.dart';
+import 'feature/sport_list/presentation/controller/sport_list_cubit.dart';
 import 'injector.dart';
 
 void mainApp() {
@@ -43,6 +44,7 @@ class NewsApp extends StatelessWidget {
       providers: [
         BlocProvider(create: (_) => injector.get<TopHeadlinesCubit>()),
         BlocProvider(create: (_) => injector.get<SportCubit>()),
+        BlocProvider(create: (_) => injector.get<SportListCubit>()),
       ],
       child: ScreenUtilInit(
         designSize: const Size(320, 568),
