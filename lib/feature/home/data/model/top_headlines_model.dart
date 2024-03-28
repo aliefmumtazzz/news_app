@@ -6,9 +6,7 @@ part 'top_headlines_model.g.dart';
 
 @JsonSerializable()
 class TopHeadlinesModel extends TopHeadlines {
-  final SourceModel source;
-
-  TopHeadlinesModel(
+  const TopHeadlinesModel(
     super.author,
     super.title,
     super.description,
@@ -16,21 +14,10 @@ class TopHeadlinesModel extends TopHeadlines {
     super.urlToImage,
     super.content,
     super.publishedAt,
-    this.source,
   );
 
   factory TopHeadlinesModel.fromJson(Map<String, dynamic> json) =>
       _$TopHeadlinesModelFromJson(json);
 
   Map<String, dynamic> toJson() => _$TopHeadlinesModelToJson(this);
-}
-
-@JsonSerializable()
-class SourceModel extends Source {
-  SourceModel(super.name);
-
-  factory SourceModel.fromJson(Map<String, dynamic> json) =>
-      _$SourceModelFromJson(json);
-
-  Map<String, dynamic> toJson() => _$SourceModelToJson(this);
 }

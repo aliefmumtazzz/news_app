@@ -1,4 +1,6 @@
-class TopHeadlines {
+import 'package:equatable/equatable.dart';
+
+class TopHeadlines extends Equatable {
   final String? author;
   final String title;
   final String? description;
@@ -16,10 +18,15 @@ class TopHeadlines {
     this.content,
     this.publishedAt,
   );
-}
 
-class Source {
-  final String? name;
-
-  const Source(this.name);
+  @override
+  List<Object?> get props => [
+        author,
+        title,
+        description,
+        url,
+        urlToImage,
+        content,
+        publishedAt,
+      ];
 }

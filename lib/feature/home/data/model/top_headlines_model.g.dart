@@ -17,7 +17,6 @@ TopHeadlinesModel _$TopHeadlinesModelFromJson(Map<String, dynamic> json) =>
       json['publishedAt'] == null
           ? null
           : DateTime.parse(json['publishedAt'] as String),
-      SourceModel.fromJson(json['source'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$TopHeadlinesModelToJson(TopHeadlinesModel instance) =>
@@ -29,14 +28,4 @@ Map<String, dynamic> _$TopHeadlinesModelToJson(TopHeadlinesModel instance) =>
       'urlToImage': instance.urlToImage,
       'content': instance.content,
       'publishedAt': instance.publishedAt?.toIso8601String(),
-      'source': instance.source,
-    };
-
-SourceModel _$SourceModelFromJson(Map<String, dynamic> json) => SourceModel(
-      json['name'] as String?,
-    );
-
-Map<String, dynamic> _$SourceModelToJson(SourceModel instance) =>
-    <String, dynamic>{
-      'name': instance.name,
     };
