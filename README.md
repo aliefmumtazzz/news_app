@@ -2,6 +2,8 @@
 
 > A Flutter project using newsorg.api with clean architecture implementation. Also the app has the ability to perform development environment and production environment
 
+The app screenshot is in `screenshot` directory
+
 ## Repository structure
 
 _this repository follow clean architecture structure, with addition of some custom assets directory e.g FlutterGen._
